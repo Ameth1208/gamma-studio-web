@@ -63,9 +63,11 @@
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        z-index: 1;
         width: 100%;
-        padding: 30px 5%;
+        padding: 20px 5%;
         font-size: 1.5vw;
+        
     }
     
     .nav_link{
@@ -163,6 +165,8 @@
     .about lottie-player{
         width: 50vw;
         height: 60vw;
+        
+        
     }
 
 
