@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Gamma Studio</title> 
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Play:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.13.0/firebase-app-compat.js"></script>
@@ -38,14 +44,176 @@
       }
     </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  <body class="bg">
+    <nav>
+        <div class="ln">
+           <div class="logo"></div>
+           <h2 class="name"> GAMMA STU<span>DIO</span></h2>
+       </div>
+       
+      
+       <ul>
+           <li><a href="#">Inicio</a></li>
+           <li><a href="#about-us">Quienes somos</a></li>
+           <li><a href="#services">Servicios</a></li>
+           <li></li>
+       </ul>
+       <a class="btn" href="#contact-us">Contactanos</a>
+   </nav>
+    <!-- Seccion Start    -->
+    
+   <section>
+        <div class="hero">
+            <!-- Content  -->
+            <div class="content">
+                <div class="text">
+                    <h4>Hola, Bienvenidos a </h4>
+                    <h1><span>GAMMA STUDIO</span></h1>
+                    <h3>Diseñadores & Desarrolladores</h3>
+                    <div class="newslatter">
+                        <form>
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email">                        
+                            <input type="submit" name="submit" id="submit" value="Lets Start">
+                        </form>
+                    </div>  
+                </div>
+                <div class="img" ></div>    
+            </div>
+        </div>
+
+        <div class="about" id="about-us" >
+            <!-- Quienes Somos -->
+            <img src="/img/Gamma2D.svg">
+            <div class="about-text">
+                <h1>Quienes Somos</h1>
+                <h4>Diseñadores & Desarrolladores</h4>
+                <p>
+                    Somos una empresas diseñadora y desarrolladora de software. Que puede proporcionar 
+                    un código limpio y un diseño perfecto de píxeles.
+                    Con la capacidades y habilidades de cumplir con los objetivos propuestos hasta superarlos
+                </p>
+               
+
+            </div>
+        </div>
+
+        <div class="services" id="services"> 
+            <div class="title"><h2>Servicios</h2></div>
+            <div class="grid">
+                <div class="box">
+                    <div class="card" >
+                        <img src="/img/develop-web.jpg" >
+                        <h5>Desarrollo Web</h5>
+                        <div class="descripcion">
+                            <p>Se ofrece diferentes diseños para paginas Web con HTML, CSS, 
+                                JavaScript,Node.js, ademas de ser paginas responsive.
+                                </p>
+                        </div>    
+                    </div>                        
+                </div>
+                
+                <div class="box">
+                    <div class="card" >
+                        <img src="/img/develop-mobile.jpg" >
+                        <h5>Desarrollo Movíl</h5>
+                        <div class="descripcion">
+                            <p>Desarrollamos Apps nativas para iPhone, Android
+                                y aplicaciones Multi-Plataforma Flutter.
+                                
+                                </p>
+                        </div>    
+                    </div>                        
+                </div>
+                <div class="box">
+                    <div class="card" >
+                        <img src="/img/ps-ai.jpg" >
+                        <h5>Diseños Grafico</h5>
+                        <div class="descripcion">
+                            <p>Creamos un lenguaje gráfico que destaque la 
+                                imagen de tu marca en cualquier entorno.
+                                </p>
+                        </div>    
+                    </div>                        
+                </div>
+                <div class="box">
+                    <div class="card" >
+                        <img src="/img/ae-pr.jpg" >
+                        <h5>Audio Visuales</h5>
+                        <div class="descripcion">
+                            <p>Grabamos y editamos videos de calidad, listos 
+                                para compartir en tus canales y redes favoritas.
+                                </p>
+                        </div>    
+                    </div>                        
+                </div>
+                <div class="box">
+                    <div class="card" >
+                        <img src="/img/dn-ps.jpg" >
+                        <h5>Renderizados 3D</h5>
+                        <div class="descripcion">
+                            <p>Tenemos la capacidad técnica para desarrollar renders fotorrealistas de 
+                                alta calidad y el criterio necesario para crear imágenes o infografías 
+                                3D.
+                                </p>
+                        </div>    
+                    </div>                        
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us" id="contact-us">
+            <div class="tittle"><h2>Contac<span>tanos</span> </h2></div>
+            <div class="b-contact">
+                <h3>Ponte en contacto <span>con nosotos</span></h3>
+                <div class="form-contact">
+                    
+                    <div class="contact">
+                        <form>
+                            <div class="inp">
+                                <label class="t">Full name</label>
+                                <input class="txtb" type="text" name="fullname" id="fullname"  placeholder="Enter Your Fullname">
+                            </div>
+                            <div class="inp">
+                                <label class="t">Email address</label>
+                                <input class="txtb" type="text" name="email" id="emailC"  placeholder="Enter Your Email">
+                            </div>
+                            <div class="inp">
+                                <label class="t">Number Phone</label>
+                                <input class="txtb" type="number" name="phone" id="phone"  placeholder="Number Phone">
+                            </div>
+
+                            <div class="inp">
+                                <label class="t">Mensaje</label>
+                                <textarea class="msm" type="text" name="mensaje" id="mensaje"  ></textarea>
+                            </div>
+                        </form>
+                    </div>  
+                    
+                    <div class="boxdate">
+                        <div class="boxmak">
+                            <img src="/img/Gamma3D.svg" class="lg">
+                            <h4 class="nm"> GAMMA STU<span>DIO</span></h4>
+                        </div>
+                        <div>
+                            <form >
+                                <input type="submit" name="send" id="send" value="Enviar" >
+                            </form>
+                            
+                        </div>
+                        
+                    </div>  
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+
+    
+    
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
