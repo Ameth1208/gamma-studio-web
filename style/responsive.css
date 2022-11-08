@@ -77,14 +77,15 @@
     }
     
     .home  {
-        padding:0px 5% ;
-        padding-top: 20%;
-        height: 100vh;
+        padding: 20vh 5% ;
+        
+        margin: 0%;
+        padding-right: 0%;
         
         text-align: justify;
+        align-items: center;
         display: list-item;
         color: var(--text-color);
-        font-size: var(--img-dp);
     }
     
     .home p{
@@ -92,11 +93,46 @@
         text-align: center;
     }
 
-
     .home img{
         margin: 5%; 
         width: 80vw;
+           
     }
 
 
+
+    .blue{
+        font-weight:600;
+        font-size: 8vw;
+        color: var(--primary-color);
+    }
+
+    .about .text{   
+        font-size: 4vw;
+    }
+   
+    
+
+
+    .about  {
+        
+        padding:0px 10% ;
+        padding-top: 15vh;
+        margin: 0%;
+        
+        height: 100vh;
+        text-align: justify;
+        align-items: center;
+        display: list-item;
+        color: var(--text-color);
+    }
+
+    .about .description{
+        width: 80vw;
+    }
+
+    .about lottie-player{
+        width: 80vw;
+        height: 80vw;
+    }
 }

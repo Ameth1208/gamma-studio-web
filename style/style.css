@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
+
 :root {
     --bg-color: #24252A;
     --primary-color: #1e91d6;
@@ -11,12 +12,10 @@
 
 
     /* var usables*/
-    --img-dp: 5vw;
-    --h1:2vw;
+    --img-dp: 50vw;
+    --h1: 10vw;
   }
   
-
-
 
 *{
     padding: 0;
@@ -111,7 +110,44 @@
     
     .home  {
         padding:0px 5% ;
-        padding-right: 10%;
+        padding-right: 5%;
+        padding-top: 10%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        display: flex;
+        color: var(--text-color);
+        
+    }
+    
+    .home p{
+        font-size: 5vw;
+        text-align: left;
+
+    }
+
+    .home img{
+        margin: 5%; 
+        width: 30vw;
+    }
+    
+
+    .about .text{
+        
+        font-size: 2vw;
+    }
+    .blue{
+        font-size: 3vw;
+        font-weight:600;
+        color: var(--primary-color);
+    }
+   
+
+    
+    .about  {
+
+        padding:0px 5% ;
+        padding-right: 5%;
         padding-top: 0%;
         height: 100vh;
         justify-content: space-between;
@@ -119,15 +155,18 @@
         text-align: justify;
         display: flex;
         color: var(--text-color);
-        font-size: var(--img-dp);
-    }
-    
-    .home p{
-        font-size: var(--h1);
     }
 
-    .home img{
-        width: 30vw;
+    .about .description{
+        width: 60vw;
     }
+    .about lottie-player{
+        width: 50vw;
+        height: 60vw;
+    }
+
+
     
+    
+
 }
