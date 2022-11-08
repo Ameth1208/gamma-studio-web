@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 5%;
+        padding: 10px 5%;
         position: fixed;
         width: 100%;
         color: white;
@@ -41,7 +41,7 @@
         transition: all 0.3s ease 0s;
         cursor: pointer;
         display: inline-block;
-        padding: 0px 20px;
+        padding: 0px 10px;
         text-decoration: none;
     }
     
@@ -51,7 +51,7 @@
     }
 
     .lg{
-        width: 10vw;
+        width: 8vw;
     }
     .logo{
         font-size: 0px;
@@ -105,12 +105,12 @@
 
     .blue{
         font-weight:600;
-        font-size: 8vw;
+        font-size: 10vw;
         color: var(--primary-color);
     }
 
     .about .text{   
-        font-size: 4vw;
+        font-size: 5vw;
     }
    
     
@@ -134,7 +134,8 @@
     }
 
     .about lottie-player{
+        margin-top: 10%;
         width: 80vw;
-        height: 50vw;
+        height: 80vw;
     }
 }

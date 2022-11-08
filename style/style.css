@@ -35,6 +35,11 @@
 
 /* NavBar*/
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 @media screen and (min-width: 601px) {
 
     li{
@@ -108,12 +113,12 @@
         color: var(--bg-color);
     }
     
-    
+    /* Home  */
     
     .home  {
         padding:0px 5% ;
         padding-right: 5%;
-        padding-top: 10%;
+        padding-top: 5%;
         justify-content: space-between;
         align-items: center;
         text-align: justify;
@@ -129,23 +134,25 @@
     }
 
     .home img{
-        margin: 5%; 
+        margin: 7%; 
         width: 30vw;
     }
     
+    .blue{
+        font-size: 4vw;
+        font-weight:600;
+        color: var(--primary-color);
+    }
 
+    /* About  */
     .about .text{
         
         font-size: 2vw;
     }
-    .blue{
-        font-size: 3vw;
-        font-weight:600;
-        color: var(--primary-color);
-    }
    
 
-    
+
+
     .about  {
 
         padding:0px 5% ;
@@ -170,7 +177,58 @@
     }
 
 
+    /* servicios  */
+
+
+    .services{
+        align-items: center;
+
+        width: 100%;
+        padding: 8%;
+        display: list-item;
+
+    }
+
+    .services .description{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .services .blue {
+        font-size: 5vw;
+
+    }
+
+    .services .content-card{
+        align-items: center;
+        justify-content: center;
+        padding-top: 8%;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .services .card{
+
+        
+        width: 25vw;
+        height: 25vh;
+        font-size: 2vw;
+        color: var(--white);
+        background-color:var(--white);
+        text-align: center;
+
+
+
+    }
     
+
+    .services  img{
+        
+        width: 25vw;
+        height: 25vh;
+    }
     
 
 }
