@@ -188,10 +188,6 @@ html{
 
     /* servicios  */
 
-
-   
-
-
     .services{
         height: 100vh;
         background-color: var(--bg-color);
@@ -272,7 +268,7 @@ html{
         margin-bottom: 25vh;
         margin-top: -26vh;
         text-align:center;
-
+        z-index: 5;
         padding-left: 2vw;
         padding-right: 2vw;
         font-size: 1.5vw;
@@ -291,5 +287,8 @@ html{
         opacity: 0.2;
 
     }
+
+
+    /*  Work  */
 
 }
