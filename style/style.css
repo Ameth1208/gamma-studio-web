@@ -22,7 +22,7 @@
     margin: 0;
     font-family: 'Chakra Petch', sans-serif;
     box-sizing: border-box;
-    background-color: var(--bg-color);
+    
     
     
     
@@ -37,17 +37,13 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: var(--bg-color);
 }
 
 
 @media screen and (min-width: 601px) {
 
-    li{
-        color:var(--text-color);
-        
-    }
-    
-    
+   
     .lg{
         width: 0vw;
     }
@@ -72,6 +68,7 @@ html{
         width: 100%;
         padding: 20px 5%;
         font-size: 1.5vw;
+        background-color: var(--bg-color);
         
     }
     
@@ -107,16 +104,19 @@ html{
         transition: all 0.3s ease 0s;
     }
     
-    .button :hover{
-        border-radius: 0;
+    .button:hover{
         background-color: var(--primary-100-color);
-        color: var(--bg-color);
+        color: var(--white);
+        
+        
     }
     
     /* Home  */
     
     .home  {
+        background-color: var(--bg-color);
         padding:0px 5% ;
+
         padding-right: 5%;
         padding-top: 5%;
         justify-content: space-between;
@@ -155,6 +155,7 @@ html{
 
     .about  {
 
+        background-color: var(--bg-color);
         padding:0px 5% ;
         padding-right: 5%;
         padding-top: 0%;
@@ -168,7 +169,10 @@ html{
 
     .about .description{
         width: 60vw;
+        
     }
+
+ 
     .about lottie-player{
         width: 50vw;
         height: 60vw;
@@ -181,54 +185,101 @@ html{
 
 
     .services{
-        align-items: center;
-
-        width: 100%;
-        padding: 8%;
-        display: list-item;
-
-    }
-
-    .services .description{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        height: 100vh;
+        background-color: var(--bg-color);
+        padding-top: 6%;
+        padding-bottom: 6%;
         
     }
 
-    .services .blue {
+    .services .title .blue{ 
         font-size: 5vw;
-
-    }
-
-    .services .content-card{
-        align-items: center;
-        justify-content: center;
-        padding-top: 8%;
-        width: 100%;
-        height: 80vh;
-    }
-
-    .services .card{
-
-        
-        width: 25vw;
-        height: 25vh;
-        font-size: 2vw;
-        color: var(--white);
-        background-color:var(--white);
         text-align: center;
-
-
-
+            
     }
-    
 
-    .services  img{
+   .content-card{
+        padding-top: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
-        width: 25vw;
-        height: 25vh;
+    }
+
+    .services .box{        
+        margin: 1vw;
+        justify-content: center;
+        align-content: center;        
+        text-align: center;
+        position: relative;
+    }
+
+ 
+    .box  { 
+        width: 20vw;
+        height: 26vh;
+        font-weight: 900;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        background-color: var(--primary-100-color);
+        color:var(--white);
+        border-radius: 5px;
+        transition: all 300ms;
+
+    }
+
+    .box:hover { 
+        height: 30vh;
+        width: 30vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        background-color: #3f5fff;
+        box-shadow: 1px 1px 20px -10px #002aff
+    }
+
+
+    .box .ti{   
+        visibility: visible;
+    }
+    .box:hover .ti{   
+        visibility: hidden;
     }
     
+
+      
+    .box .t{
+    
+        visibility: hidden;
+    }
+
+    .box:hover .t{
+        width: 100%;
+        height: 100%;
+        color: var(--white);
+        font-weight: 900;
+        margin-top: -23vh;
+        text-align:center;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.5vw;
+        transition: cubic-bezier(0.23, 1, 0.320, 1);
+        transition-duration: 1s;
+        visibility: visible;
+    }
+    
+
+    .box img{
+        object-fit: cover;
+        width: 100%;
+        height: 22vh;
+        border-radius: 5px 5px 0 0;
+    }
+    .box:hover img{
+        object-fit: cover;
+        width: 100%;
+        height: 26vh;
+        border-radius: 5px;
+        opacity: 0.1;
+    }
 
 }
