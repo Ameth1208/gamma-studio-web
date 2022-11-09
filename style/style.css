@@ -3,6 +3,10 @@
 
 :root {
     --bg-color: #24252A;
+
+    --dark-color: #2b2b34;
+
+    --primary-color-op: #1e91d686;
     --primary-color: #1e91d6;
     --primary-100-color: #004998;
     --text-color: #dddbcb;
@@ -28,9 +32,10 @@
     
 }
 *::-webkit-scrollbar {
-    width: 8px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
-    display: none;  /* Ocultar scroll */
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 5px;    /* Tamaño del scroll en horizontal */
+     display: none; /*  Ocultar scroll */
+
 }
 
 /* NavBar*/
@@ -184,6 +189,8 @@ html{
     /* servicios  */
 
 
+    /* 
+
     .services{
         height: 100vh;
         background-color: var(--bg-color);
@@ -280,6 +287,112 @@ html{
         height: 26vh;
         border-radius: 5px;
         opacity: 0.1;
+    }
+
+
+
+    */
+
+
+
+    .services{
+        height: 100vh;
+        background-color: var(--bg-color);
+        padding-top: 6%;
+        padding-bottom: 6%;
+        
+    }
+
+    .services .title .blue{ 
+        font-size: 5vw;
+        text-align: center;
+            
+    }
+
+   .content-card{
+        padding-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .services .box{        
+        
+        justify-content: center;
+        align-content: center;        
+        text-align: center;
+        position: relative;
+    }
+
+ 
+    .box  { 
+
+        width: 25vw;
+        height: 20vw;
+        padding: 3vw;
+        margin: 3vw;
+        font-weight: 900;
+        border-radius: 10px;
+        background-color: var(--dark-color);
+        box-shadow: 3px 3px 20px -2px var(--primary-color);        
+        color:var(--white);
+    
+
+    }
+
+
+    .box:hover { 
+        
+        width: 30vw;
+        height: 20vw;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        background-color: #1e91d6;
+        transition: all 300ms;
+    }
+     
+
+    
+
+    .box .ti{  
+        
+        font-size: 2vw;
+        visibility: visible;
+    }
+    .box:hover .ti{   
+        visibility: hidden;
+    }
+          
+    .box .t{
+    
+        visibility: hidden;
+    }
+
+    .box:hover .t{
+        color: var(--white);
+        font-weight: 900;
+        margin-bottom: 25vh;
+        margin-top: -26vh;
+        text-align:center;
+
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.5vw;
+        transition: cubic-bezier(0.23, 1, 0.320, 1);
+        transition-duration: 1s;
+        visibility: visible;
+    }
+    
+    .box .paths{
+        display: flex;
+        padding: 2vw;
+    }
+
+    .box:hover svg {
+        
+        opacity: 0.2;
+
     }
 
 }
